@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// dsh-purge CLI（小杨）— 移植自 dsh_purge.py 的静默模式，功能一个不差
+// dsh-purge CLI — 静默模式
 // 用法:
 //   dsh-purge              # TUI 等价：默认只显示状态（这里同 --status）
 //   dsh-purge --status     # 显示状态

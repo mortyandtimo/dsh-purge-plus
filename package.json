@@ -38,10 +38,7 @@
     "prompt-injection",
     "agent"
   ],
-  "author": "小杨 (YuJunZhiXue) — original author",
-  "contributors": [
-    "mortyandtimo"
-  ],
+  "author": "mortyandtimo",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mortyandtimo/dsh-purge-plus.git"

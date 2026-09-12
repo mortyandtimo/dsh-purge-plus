@@ -1,6 +1,6 @@
 # Changelog
 
-本仓库是 [`YuJunZhiXue/dsh-purge`](https://github.com/YuJunZhiXue/dsh-purge) 的增强分支（fork）。上游作者：小杨。以下只记录本分支相对上游 `v1.3.5` 的增量改动。
+本仓库基于 `dsh-purge` v1.3.5（MIT）。以下只记录本分支相对该版本的增量改动。
 
 ## [1.3.6] — Enhanced fork
 
