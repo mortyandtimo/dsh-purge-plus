@@ -1,0 +1,74 @@
+{
+  "name": "dsh-purge",
+  "version": "1.3.6",
+  "description": "DeepSeek Harness 破甲增强版：新增 TUN fake-ip 动态放行（patch #38）、persona prefix 变体补丁、Node 24 兼容修复与幂等锚点修复。Enhanced fork of dsh-purge.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "dsh-purge": "bin/dsh-purge.js"
+  },
+  "files": [
+    "lib",
+    "bin",
+    "docs",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh-CN.md",
+    "LICENSE"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-plugins",
+    "破甲",
+    "llm-jailbreak",
+    "harness-jailbreak",
+    "deepseek-harness",
+    "purge",
+    "jailbreak",
+    "instructions",
+    "rules",
+    "prompt-injection",
+    "agent"
+  ],
+  "author": "小杨 (YuJunZhiXue) — original author",
+  "contributors": [
+    "mortyandtimo"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mortyandtimo/dsh-purge-plus.git"
+  },
+  "homepage": "https://github.com/mortyandtimo/dsh-purge-plus#readme",
+  "bugs": {
+    "url": "https://github.com/mortyandtimo/dsh-purge-plus/issues"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-connection",
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-settings"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dshTarget": "0.1.2-rc.1"
+}
